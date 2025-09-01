@@ -1,2 +1,0 @@
-+ มี 2 หน้าที่เป็น concat กับ binary operator
-ถ้า operand ตัวใดตัวนึง เป็น string จะทำให้ + เป็นการ concat ทันที

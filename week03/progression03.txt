@@ -1,0 +1,8 @@
+เรื่อง function
+เป็นชุดคำสั่งที่สามารถใช้งานซ้ำได้ โดยมันจะมีการคืนค่าออกมาด้วยการใช้ return
+
+ซึ่ง function สามารถเขียนได้หบายรูปแบบ
+- function add()
+- let sum = (a,b)=>(a+b)
+- let sum = function()
+หรือจะเป็น function ที่เรียก function อีกที

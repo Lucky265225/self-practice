@@ -1,0 +1,10 @@
++ มี 2 หน้าที่เป็น concat กับ binary operator
+ถ้า operand ตัวใดตัวนึง เป็น string จะทำให้ + เป็นการ concat ทันที
+
+เรื่อง object
+object ไม่ได้เก็ญข้อมูลไว้ที่ตัวเอง แต่จะอ้างถึงแหล่งที่เก็บ
+object จะมีการเก้บค่าเป็น key, value ต้องเข้าถึง key ถึง จะได้ค่า value ออกมา
+
+จากการทำโจทย์
+- ได้ลองสร้าง object ในหลายแบบ literal, object constructor, class
+- การ loop ให้ได้ key แล้วนำไปใช้ หา value อีกที
