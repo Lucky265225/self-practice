@@ -1,0 +1,12 @@
+let x = "abcd"
+let y = ["a","bb","abc"]
+console.log(x.includes("b"));
+console.log(y.includes("b"));
+
+การใช้ includes() ใน stirng กับ array
+string => จะหาตัวอักษรนั้น
+array => จะหาคำนั้น
+
+เรื่อง sort()
+เราจะเรียงด้วยความรู้ 3 กลุ่ม + , - , 0
+เพื่อที่จะให้รู้ในการเรียงว่าต้องเรียงยังไง
