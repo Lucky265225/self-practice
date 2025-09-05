@@ -206,3 +206,55 @@ function processNumbers(arr){
 }
 // console.log(processNumbers([1, 2, 3, 4])) // 10 (1^2 + 3^2) 
 // console.log(processNumbers([5, 6, 7, 8])) // 74 (5^2 + 7^2)
+
+
+// ให้เขียนฟังก์ชัน applyToAll(arr, fn) ที่: รับอาเรย์ arr และฟังก์ชัน fn ใช้ fn กับทุกสมาชิกใน arr แล้วคืนค่าอาเรย์ใหม่
+function applyToAll(arr,fn){
+    return arr.map(x => fn(x))
+}
+// console.log(applyToAll([1, 2, 3], (x) => x * 2)); // [2, 4, 6]
+// console.log(applyToAll(["a", "b"], (x) => x.toUpperCase()));// ["A", "B"]
+
+
+// ใช้ reduce() เพื่อเขียนฟังก์ชันที่รับอาเรย์ของคำ และคืนค่าเป็น object ที่บอกว่าแต่ละคำเจอกี่ครั้ง
+const words = ["apple", "banana", "apple", "orange", "banana", "apple"];
+// Expected Output: { apple: 3, banana: 2, orange: 1 }
+// console.log(words.reduce((acc,word) => {
+//     acc[word] = (acc[word] || 0) + 1
+//     return acc
+// },{}));
+
+
+function makeFilter(predicate){
+    return function(arr){
+        return arr.filter(predicate)
+    }
+}
+const isEven = (x) => x % 2 === 0;
+const filterEven = makeFilter(isEven);
+// console.log(filterEven([1, 2, 3, 4, 5])); // [2, 4])
+
+
+function compose(f,g){
+    return function(result){
+        return f(g(result))
+    }
+}
+const add1 = x => x + 1;
+const double = x => x * 2;
+const add1ThenDouble = compose(double, add1);
+// console.log(add1ThenDouble(3)); // => double(add1(3)) = double(4) = 8
+
+
+// สร้างฟังก์ชัน multiplier(factor) ที่คืนฟังก์ชันใหม่ ซึ่งจะคูณค่าด้วย factor ที่กำหนดไว้ล่วงหน้า
+function multiplier(factor){
+    return function(x){
+        return x * factor
+    }
+}
+const times3 = multiplier(3);
+times3(10); // 30
+const times10 = multiplier(10);
+// console.log(times10(5)); // 50
+
+
