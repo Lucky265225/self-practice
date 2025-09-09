@@ -15,11 +15,14 @@ class Book {
   }
 }
 
+const user = {name : "lucky" , age : 20}
+
 export {
     echo,
     getLength as default,
     GPAAverage as GPA,
-    Book
+    Book,
+    user
 }
 
 // module.exports = { 

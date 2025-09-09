@@ -255,6 +255,6 @@ function multiplier(factor){
 const times3 = multiplier(3);
 times3(10); // 30
 const times10 = multiplier(10);
-// console.log(times10(5)); // 50
+console.log(times10(5)); // 50
 
 
